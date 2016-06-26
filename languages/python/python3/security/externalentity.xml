@@ -1,0 +1,4 @@
+<!DOCTYPE external [
+<!ENTITY ee SYSTEM "file:///tmp/some.xml">
+]>
+<root>&ee;</root>
