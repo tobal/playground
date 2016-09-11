@@ -12,18 +12,20 @@ class BowlingGameTest extends FunSpec with ShouldMatchers with BeforeAndAfterAll
         g = new BowlingGame
     }
 
+    private def rollMany(n: Int, pins: Int) {
+        for {
+            i <- 0 until n
+        } yield g.roll(pins)
+    }
+
     describe("BowlingGame") {
         it ("scores zero on gutter game") {
-            for {
-                i <- 0 until 20
-            } yield g.roll(0)
+            rollMany(20, 0)
             g.score should equal (0)
         }
 
         it ("scores 20 on all ones game") {
-            for {
-                i <- 0 until 20
-            } yield g.roll(1)
+            rollMany(20, 1)
             g.score should equal (20)
         }
     }
