@@ -10,7 +10,7 @@ class BowlingGameTest extends FunSpec with ShouldMatchers {
             for {
                 i <- 0 until 20    
             } yield g.roll(0)
-
+            g.score should equal (0)
         }
     }
 }
