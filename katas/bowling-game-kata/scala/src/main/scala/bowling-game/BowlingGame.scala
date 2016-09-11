@@ -1,5 +1,6 @@
 package BowlingGame
 
-object BowlingGame {
-  def answer = 42
+
+class BowlingGame {
+
 }
