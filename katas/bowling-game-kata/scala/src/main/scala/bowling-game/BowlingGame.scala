@@ -2,9 +2,11 @@ package BowlingGame
 
 
 class BowlingGame {
-    def roll(pins: Int): Any = {
+    var currentScore: Int = 0
 
+    def roll(pins: Int): Any = {
+        currentScore += pins
     }
 
-    def score: Int = 0
+    def score: Int = currentScore
 }
