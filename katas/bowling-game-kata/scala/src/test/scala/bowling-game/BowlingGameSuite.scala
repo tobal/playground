@@ -39,5 +39,13 @@ class BowlingGameTest extends FunSpec with ShouldMatchers with BeforeAndAfterEac
             rollMany(17, 0)
             g.score should equal (16)
         }
+
+        it ("takes one strike into account") {
+            g.roll(10)
+            g.roll(3)
+            g.roll(4)
+            rollMany(16, 0)
+            g.score should equal (24)
+        }
     }
 }
