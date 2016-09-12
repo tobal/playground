@@ -2,11 +2,13 @@ package BowlingGame
 
 
 class BowlingGame {
-    var currentScore: Int = 0
+    var rolls: List[Int] = List()
 
     def roll(pins: Int): Any = {
-        currentScore += pins
+        rolls = rolls :+ pins
     }
 
-    def score: Int = currentScore
+    def score: Int = {
+        rolls.foldLeft(0)(_ + _)
+    }
 }
