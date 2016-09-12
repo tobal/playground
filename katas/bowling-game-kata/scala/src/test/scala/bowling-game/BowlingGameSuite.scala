@@ -18,6 +18,10 @@ class BowlingGameTest extends FunSpec with ShouldMatchers with BeforeAndAfterEac
         g.roll(5)
     }
 
+    private def rollStrike() {
+        g.roll(10)
+    }
+
     override def beforeEach() {
         g = new BowlingGame
     }
@@ -41,11 +45,16 @@ class BowlingGameTest extends FunSpec with ShouldMatchers with BeforeAndAfterEac
         }
 
         it ("takes one strike into account") {
-            g.roll(10)
+            rollStrike()
             g.roll(3)
             g.roll(4)
             rollMany(16, 0)
             g.score should equal (24)
+        }
+
+        it ("scores perfect game to 300") {
+            rollMany(12, 10)
+            g.score should equal (300)
         }
     }
 }
