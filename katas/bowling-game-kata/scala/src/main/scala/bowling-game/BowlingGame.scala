@@ -30,7 +30,7 @@ class BowlingGame {
         sc
     }
 
-    def roll(pins: Int): Any = {
+    def roll(pins: Int) {
         rolls = rolls :+ pins
     }
 

@@ -13,16 +13,16 @@ class BowlingGameTest extends FunSpec with ShouldMatchers with BeforeAndAfterEac
         } yield g.roll(pins)
     }
 
-    private def rollSpare() {
+    private def rollSpare {
         g.roll(5)
         g.roll(5)
     }
 
-    private def rollStrike() {
+    private def rollStrike {
         g.roll(10)
     }
 
-    override def beforeEach() {
+    override def beforeEach {
         g = new BowlingGame
     }
 
@@ -38,14 +38,14 @@ class BowlingGameTest extends FunSpec with ShouldMatchers with BeforeAndAfterEac
         }
 
         it ("takes one spare into account") {
-            rollSpare()
+            rollSpare
             g.roll(3)
             rollMany(17, 0)
             g.score should equal (16)
         }
 
         it ("takes one strike into account") {
-            rollStrike()
+            rollStrike
             g.roll(3)
             g.roll(4)
             rollMany(16, 0)
