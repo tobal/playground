@@ -9,7 +9,10 @@ class BowlingGame {
 
     private def frameScore: Int = {
         var sc = 0
-        if (isSpare) {
+        if (rolls(frameIndex) == 10) {
+            sc += 10 + rolls(frameIndex + 1) + rolls(frameIndex + 2)
+            frameIndex += 1
+        } else if (isSpare) {
             sc += 10 + rolls(frameIndex + 2)
             frameIndex += 2
         } else {
