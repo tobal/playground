@@ -1,21 +1,20 @@
 import org.scalatest.FunSpec
 import org.scalatest.matchers.ShouldMatchers
-import org.scalatest.BeforeAndAfterAllConfigMap
-import org.scalatest.ConfigMap
+import org.scalatest.BeforeAndAfterEach
 
 import BowlingGame._
 
-class BowlingGameTest extends FunSpec with ShouldMatchers with BeforeAndAfterAllConfigMap {
+class BowlingGameTest extends FunSpec with ShouldMatchers with BeforeAndAfterEach{
     private var g: BowlingGame = new BowlingGame
-
-    override def beforeAll(configMap: ConfigMap) {
-        g = new BowlingGame
-    }
 
     private def rollMany(n: Int, pins: Int) {
         for {
             i <- 0 until n
         } yield g.roll(pins)
+    }
+
+    override def beforeEach() {
+        g = new BowlingGame
     }
 
     describe("BowlingGame") {
