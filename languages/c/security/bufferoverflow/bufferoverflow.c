@@ -3,7 +3,7 @@
 
 void secretFunction()
 {
-    printf("Congratulations!");
+    printf("Congratulations!\n\n\n\n");
 }
 
 void echo()
