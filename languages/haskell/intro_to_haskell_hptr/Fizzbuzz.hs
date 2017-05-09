@@ -2,8 +2,12 @@
 module Main where
 
 fizzBuzz :: Integer -> String
-fizzBuzz input = if input `mod` 3 == 0 then (if input `mod` 5 == 0 then "FizzBuzz" else "Fizz") else (if input `mod` 5 == 0 then "Buzz" else (show input))
+fizzBuzz input
+    | input `mod` 15 == 0 = "FizzBuzz"
+    | input `mod` 3 == 0 = "Fizz"
+    | input `mod` 5 == 0 = "Buzz"
+    | otherwise = show input
 
 main :: IO ()
-main = putStrLn (fizzBuzz 14)
+main = putStrLn (fizzBuzz 9)
 
