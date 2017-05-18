@@ -22,10 +22,9 @@ someColours :: [Colour]
 someColours = [Red, Green, Brown]
 
 favouriteColour :: Knight -> Colour
-favouriteColour knight
-                | knight == Arthur = Red
-                | knight == Galahad = Green
-                | knight == Robin = Blue
-                | knight == Lancelot = Yellow
-                | knight == Bedevere = Brown
+favouriteColour Arthur = Red
+favouriteColour Galahad = Green
+favouriteColour Robin = Blue
+favouriteColour Lancelot = Yellow
+favouriteColour Bedevere = Brown
 
