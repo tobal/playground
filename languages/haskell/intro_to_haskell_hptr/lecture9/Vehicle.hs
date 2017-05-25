@@ -4,13 +4,12 @@ module Vehicle where
 data Propulsion = Wind
                 | Diesel
 
-data Ship = S { propulsion :: Propulsion, lengthFeet :: Double, passengerCap :: Int }
+data Vehicle = Ship { propulsion :: Propulsion, lengthFeet :: Double, passengerCap :: Int }
+             | Car { maxSpeed :: Double, horsePower :: Double }
+             | Plane { maxTravelHeight :: Double, maxVelocity :: Double }
 
-data Car = C { maxSpeed :: Double, horsePower :: Double }
-
-data Plane = P { maxTravelHeight :: Double, maxVelocity :: Double }
-
-data Vehicle = Ship
-             | Car
-             | Plane
+price :: Vehicle -> Double
+price (Ship propulsion lengthFeet passengerCap) = lengthFeet * 2.0
+price (Car maxSpeed horsePower) = horsePower * 2.0
+price (Plane maxTravelHeight maxVelocity) = maxTravelHeight * 10.0
 
