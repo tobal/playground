@@ -7,8 +7,6 @@ int foo(int param)
 int main(void)
 {
     int varMain = 1;
-    // prolog
     int ret = foo(varMain);
-    // epilog
     return ret;
 }
