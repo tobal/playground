@@ -10,7 +10,7 @@ data Vehicle = Ship { propulsion :: Propulsion, lengthFeet :: Double, passengerC
 
 price :: Vehicle -> Double
 price vehicle = case vehicle of
-                     (Ship propulsion lengthFeet passengerCap) = lengthFeet * 2.0
-                     (Car maxSpeed horsePower) = horsePower * 2.0
-                     (Plane maxTravelHeight maxVelocity) = maxTravelHeight * 10.0
+                     (Ship propulsion lengthFeet passengerCap) -> lengthFeet * 2.0
+                     (Car maxSpeed horsePower) -> horsePower * 2.0
+                     (Plane maxTravelHeight maxVelocity) -> maxTravelHeight * 10.0
 
