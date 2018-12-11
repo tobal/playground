@@ -26,7 +26,7 @@ def get_search_query():
 
 
 auth_params = {'username':username, 'password':password}
-server_content = requests.post(baseurl + '/services/auth/login', params=auth_params)
+server_content = requests.post(baseurl + '/services/auth/login', params=auth_params, verify=False)
 print(server_content)
 
 
