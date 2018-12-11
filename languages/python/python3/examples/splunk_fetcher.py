@@ -4,8 +4,10 @@
 import requests
 from sys import argv
 from xml.dom import minidom
+import urllib3
 
 
+urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 if len(argv) < 4:
     print('Please specify the base url, username and password')
     exit(1)
@@ -21,21 +23,14 @@ def get_search_query():
     search_query = 'host="zion" index="local_var_log" process="sshd"'
     if not (search_query.startswith('search') or search_query.startswith("|")):
         search_query = 'search ' + search_query
-    print(search_query)
     return search_query
 
 
-auth_params = {'username':username, 'password':password}
-server_content = requests.post(baseurl + '/services/auth/login', params=auth_params, verify=False)
-print(server_content)
-
-
-# Authenticate with server.
-# Disable SSL cert validation. Splunk certs are self-signed.
-#serverContent = httplib2.Http(disable_ssl_certificate_validation=True).request(
-#                    baseurl + '/services/auth/login', 'POST', headers={},
-#                    body=urllib.urlencode({'username':username, 'password':password}))[1]
-
+server_content = requests.post(baseurl + '/services/search/jobs',
+                               auth=(username, password),
+                               verify=False,
+                               data={'search': get_search_query()})
+print(server_content.text)
 
 
 #sessionKey = minidom.parseString(serverContent).getElementsByTagName('sessionKey')[0].childNodes[0].nodeValue
