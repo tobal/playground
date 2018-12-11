@@ -30,13 +30,6 @@ server_content = requests.post(baseurl + '/services/search/jobs',
                                auth=(username, password),
                                verify=False,
                                data={'search': get_search_query()})
-print(server_content.text)
+search_id = minidom.parseString(server_content.text).getElementsByTagName('sid')[0].firstChild.nodeValue
 
-
-#sessionKey = minidom.parseString(serverContent).getElementsByTagName('sessionKey')[0].childNodes[0].nodeValue
-
-
-# Run the search.
-# Again, disable SSL cert validation. 
-#print(httplib2.Http(disable_ssl_certificate_validation=True).request(baseurl + '/services/search/jobs','POST',
-#    headers={'Authorization': 'Splunk %s' % sessionKey},body=urllib.urlencode({'search': searchQuery}))[1])
+print(search_id)
