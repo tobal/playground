@@ -32,4 +32,11 @@ server_content = requests.post(baseurl + '/services/search/jobs',
                                data={'search': get_search_query()})
 search_id = minidom.parseString(server_content.text).getElementsByTagName('sid')[0].firstChild.nodeValue
 
-print(search_id)
+while True:
+    search_results = requests.get(baseurl + '/services/search/jobs/' + search_id + '/results/',
+                                   auth=(username, password),
+                                   verify=False,
+                                   data={'output_mode': 'json'})
+    if search_results.status_code == 200:
+        print(search_results.text)
+        break
