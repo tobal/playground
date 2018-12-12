@@ -14,10 +14,6 @@ if len(argv) < 4:
 
 baseurl, username, password = argv[1], argv[2], argv[3]
 
-baseurl = 'https://10.170.30.100:8089'
-username = 'admin'
-password = 'TitkoS12'
-
 
 def get_search_query():
     search_query = 'host="zion" index="local_var_log" process="sshd"'
