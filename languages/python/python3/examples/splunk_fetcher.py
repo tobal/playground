@@ -16,10 +16,7 @@ baseurl, username, password = argv[1], argv[2], argv[3]
 
 
 def get_search_query():
-    search_query = 'index=* process="sshd" earliest=-1w@d | transaction pid host'
-    if not (search_query.startswith('search') or search_query.startswith("|")):
-        search_query = 'search ' + search_query
-    return search_query
+    return 'search index=* process="sshd" earliest=-1w@d | transaction pid host'
 
 
 def run_search_and_get_id():
