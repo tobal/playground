@@ -16,7 +16,7 @@ baseurl, username, password = argv[1], argv[2], argv[3]
 
 
 def get_search_query():
-    search_query = 'host="zion" index="local_var_log" process="sshd"'
+    search_query = 'index=* process="sshd" | transaction pid host'
     if not (search_query.startswith('search') or search_query.startswith("|")):
         search_query = 'search ' + search_query
     return search_query
