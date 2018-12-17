@@ -16,7 +16,7 @@ baseurl, username, password = argv[1], argv[2], argv[3]
 
 
 def get_search_query():
-    return 'search index=* process="sshd" earliest=-1w@d | transaction pid host'
+    return 'search index=* eventtype=logon OR eventtype=logoff earliest=-1w@d'
 
 
 def run_search_and_get_id():
