@@ -16,7 +16,7 @@ baseurl, username, password = argv[1], argv[2], argv[3]
 
 
 def get_search_query():
-    return 'search index=* eventtype=windows_logon_success OR eventtype=windows_logoff | transaction Logon_ID'
+    return 'search index=* eventtype=windows_logon_success OR eventtype=windows_logoff | transaction Logon_ID mvraw=true'
 
 
 def run_search_and_get_id():
