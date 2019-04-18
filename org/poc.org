@@ -11,7 +11,7 @@
     - Brush teeth
 ** Evening
 *** Learn
- - Profession (Agda)
+    - Profession (Agda)
     - Language (Japanese)
 *** Order
     - Tidy up the flat
