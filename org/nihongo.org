@@ -1,0 +1,51 @@
+# M-x set-language-environment Japanese
+
+* Köszönések
+
+| Bemutatkozás          | Shókai                       | 紹介                         |
+|-----------------------+------------------------------+------------------------------|
+| Üdvözlöm              | Hajimemashite                | はじめまして                 |
+| Én XY vagyok          | Watashi wa XY desu           | わたしはXYです               |
+| Nagyon örvendek       | Dózo yoroshiku onegaishimasu | どぅぞよろしくおねがいします |
+| Részemről a szerencse | Kochirakoso yoroshiku        | こちらこそよろしく           |
+|                       |                              |                              |
+
+| Köszönések | Aisatsu         | あいさつ           |
+|------------+-----------------+--------------------|
+| Jó reggelt | Ohayó gozaimasu | おはよぅございます |
+| Jó napot   | Kon'nichi wa    | こんにちわ         |
+| Jó estét   | Konbanwa        | こんばんわ         |
+|            |                 |                    |
+
+* Személyes nézmások
+| Én         | Watashi | わたし |
+| Én (férfi) | Boku    | ぼく   |
+| Te         |         |        |
+| Ő          |         |        |
+| Mi         |         |        |
+| Ti         |         |        |
+| Ők         |         |        |
+
+* Számok
+
+| Számok | Kazu        | 数   |
+|--------+-------------+------|
+|      1 | ich/ichi    | 一   |
+|      2 | ni          | 二   |
+|      3 | san         | 三   |
+|      4 | shi/yon     | 四   |
+|      5 | go          | 五   |
+|      6 | roku        | 六   |
+|      7 | shichi/nana | 七   |
+|      8 | hachi       | 八   |
+|      9 | kyu/ku      | 九   |
+|     10 | jú          | 十   |
+|    100 | hyaku       | 百   |
+|    300 | sanbyaku    | 三百 |
+|    600 | roppyaku    | 六百 |
+|    800 | happyaku    | 八百 |
+|   1000 | sen/issen   | 千   |
+|   3000 | sanzen      | 三千 |
+|   8000 | hassen      | 八千 |
+|  10000 | man/ichiman | 万   |
+|        |             |      |
