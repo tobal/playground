@@ -1,0 +1,34 @@
+* Examples from manual
+** Document structure
+*** Headlines
+**** Third level headline
+*** Visibility
+**** Initial visibility
+#+STARTUP: overview
+#+STARTUP: content
+#+STARTUP: showall
+#+STARTUP: showeverything
+**** Catching invisible edits
+Set org-catch-invisible-edits to non-nil
+
+*** Plain lists
+My favorite scenes are (in this order)
+1. The attack of the Rohirrim
+2. Eowyn's fight with the witch king
+   + this was already my favorite scene in the book
+   + I really like Miranda Otto.
+3. Peter Jackson being shot by Legolas
+   - on DVD only
+   He makes a really funny face when it happens.
+But in the end, no individual scenes matter but the film as a whole.
+Important actors in this film are:
+- Elijah Wood :: He plays Frodo
+- Sean Astin :: He plays Sam, Frodo's friend. I still remember him
+     very well from his role as Mikey Walsh in /The Goonies/.
+*** Drawers
+Still outside the drawer
+:DRAWERNAME:
+This is inside the drawer.
+It can be multiple lines
+:END:
+After the drawer.
