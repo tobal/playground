@@ -1,6 +1,7 @@
 # M-x set-language-environment Japanese
+# C-\ to toggle
 
-* Köszönések
+* Szófordulatok
 
 | Bemutatkozás          | Shókai                       | 紹介                         |
 |-----------------------+------------------------------+------------------------------|
@@ -8,16 +9,22 @@
 | Én XY vagyok          | Watashi wa XY desu           | わたしはXYです               |
 | Nagyon örvendek       | Dózo yoroshiku onegaishimasu | どぅぞよろしくおねがいします |
 | Részemről a szerencse | Kochirakoso yoroshiku        | こちらこそよろしく           |
-|                       |                              |                              |
 
-| Köszönések | Aisatsu         | あいさつ           |
-|------------+-----------------+--------------------|
-| Jó reggelt | Ohayó gozaimasu | おはよぅございます |
-| Jó napot   | Kon'nichi wa    | こんにちわ         |
-| Jó estét   | Konbanwa        | こんばんわ         |
-|            |                 |                    |
+| Köszönések     | Aisatsu         | あいさつ           |
+|----------------+-----------------+--------------------|
+| Jó reggelt     | Ohayó gozaimasu | おはよぅございます |
+| Jó napot       | Kon'nichi wa    | こんにちわ         |
+| Jó estét       | Konbanwa        | こんばんわ         |
+| Jó éjszakát    | Oyasuminasai    | おやすみなさい     |
+| Viszontlátásra | Sayónara        | さよおなら             |
+
+| Egyéb                  |                           |                        |
+|------------------------+---------------------------+------------------------|
+| Nagyon szépen köszönöm | Dómo arigató gozaimashita | 同も有難うございました |
+
 
 * Személyes nézmások
+  
 | Én         | Watashi | わたし |
 | Én (férfi) | Boku    | ぼく   |
 | Te         |         |        |
@@ -49,3 +56,57 @@
 |   8000 | hassen      | 八千 |
 |  10000 | man/ichiman | 万   |
 |        |             |      |
+
+* Főnevek
+ 
+| Hobbi           | Shumi      | 趣味         |
+|-----------------+------------+--------------|
+| motorozás       | baiku      | バイク       |
+| harcművészet    | bujutsu    | ぶじゅつ     |
+| horgászás       | tsuri      | つり         |
+| történelem      | rakishi    | らきし       |
+| japán kardvívás | kenjutsu   | 剣術         |
+| rajzolás        | egaki      | えがき       |
+| gitározás       | gitá       | ギタア       |
+| legózás         | rego       | レゴ         |
+| pihenés         | rejá       | れじゃあ     |
+| társasjáték     | bódo-gému  | ボウドゲエム |
+| koncert         | konsáto    | コンサアト   |
+| zene            | ongaku     | おんがく     |
+| éneklés         | uta        | うた         |
+| zsonglőrködés   | jagguru    | ジャッグル   |
+| festés          | peintá     | ペインタア   |
+| olvasás         | dokusho    | どくしょ     |
+| tanulás         | benkyó     | べんきょう   |
+| karate          | karate     | 空手         |
+| lovaglás        | jóba       | じょうば     |
+| tánc            | dansu      | ダンス       |
+| biciklizés      | saikuringu | サイクリング |
+| mintázás        | moderingu  | モデリング   |
+| autókázás       | doraibingu | ドライビング |
+| gasztronómia    | ryórihó    | りょうりほう |
+| japán furulya   | shakuhachi | 尺八         |
+| japán dob       | taiko      | たいこ       |
+| kertészkedés    | engei      | えんがい     |
+| mozi, film      | múbí       | ムウビイ     |
+| beszélgetés     | tókingu    | トウキング   |
+| meditáció       | meisó      | めいしょう        |
+
+** Kategorizálatlan
+   
+| Ó! Jaj!       | aa    | ああ     |
+| kék           | aoi   | あおい   |
+| mond          | iu    | いう     |
+| hal           | uo    | うお     |
+| brühühü       | aiai  | あいあい |
+| szeretet      | ai    | あい     |
+| jó            | ii    | いい     |
+| ház           | ie    | いえ     |
+| rája          | ei    | えい     |
+| kerget, űz    | ou    | おう     |
+| találkozik    | au    | あう     |
+| nem           | iie   | いいえ   |
+| felett, rajta | ue    | うえ     |
+| igen          | ee    | ええ     |
+| sok           | ooi   | おおい   |
+| meghajlás     | ojigi | おじぎ     |
