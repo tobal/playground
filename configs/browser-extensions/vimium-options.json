@@ -12,6 +12,10 @@
     {
       "pattern": "https://trello.com/*",
       "passKeys": "?"
+    },
+    {
+      "pattern": "https://review.balabit/*",
+      "passKeys": ""
     }
   ],
   "filterLinkHints": false,
