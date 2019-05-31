@@ -1,0 +1,179 @@
+* Tutorial commands and outputs
+
+#+NAME: HashiCorp Vault Tutorial commands
+#+BEGIN_SRC bash
+15:31:39 [tobal@zion] (master) ~
+$> export VAULT_ADDR='http://127.0.0.1:8200'
+15:33:30 [tobal@zion] (master) ~
+$> cd /opt/splunk/
+bin/     etc/     include/ lib/     openssl/ share/   var/
+15:33:30 [tobal@zion] (master) ~
+$> cd opt/vault/
+15:34:03 [tobal@zion] (master) ~/opt/vault
+$> ls
+bin
+15:34:03 [tobal@zion] (master) ~/opt/vault
+$> vim secret.txt
+15:34:35 [tobal@zion] (master) ~/opt/vault
+$> cat secret.txt
+Unseal Key: BWrTVG7ubE37vPDQs63FSVeSsJOLGXjC/Qoht0vzvJ4=
+Root Token: s.I6572ijlVThzmgwcYfU65fuN
+15:34:53 [tobal@zion] (master) ~/opt/vault
+$> export VAULT_DEV_ROOT_TOKEN_ID="s.I6572ijlVThzmgwcYfU65fuN"
+15:35:12 [tobal@zion] (master) ~/opt/vault
+$> vault status
+Key             Value
+---             -----
+Seal Type       shamir
+Initialized     true
+Sealed          false
+Total Shares    1
+Threshold       1
+Version         1.1.2
+Cluster Name    vault-cluster-8ebb2a0a
+Cluster ID      00061a5d-10b2-dc5e-852e-50a05934a3b6
+HA Enabled      false
+15:35:40 [tobal@zion] (master) ~/opt/vault
+$> vault kv put secret/hello foo=world
+Key              Value
+---              -----
+created_time     2019-05-30T13:50:34.427159168Z
+deletion_time    n/a
+destroyed        false
+version          1
+15:50:34 [tobal@zion] (master) ~/opt/vault
+$> vault kv put secret/hello foo=world excited=yes
+Key              Value
+---              -----
+created_time     2019-05-30T13:51:18.581512531Z
+deletion_time    n/a
+destroyed        false
+version          2
+15:51:18 [tobal@zion] (master) ~/opt/vault
+$> vault kv get secret/hello
+====== Metadata ======
+Key              Value
+---              -----
+created_time     2019-05-30T13:51:18.581512531Z
+deletion_time    n/a
+destroyed        false
+version          2
+
+===== Data =====
+Key        Value
+---        -----
+excited    yes
+foo        world
+15:51:59 [tobal@zion] (master) ~/opt/vault
+$> vault kv put secret/hello bar=hello
+Key              Value
+---              -----
+created_time     2019-05-30T13:52:32.879340788Z
+deletion_time    n/a
+destroyed        false
+version          3
+15:52:32 [tobal@zion] (master) ~/opt/vault
+$> vault kv get secret/hello
+====== Metadata ======
+Key              Value
+---              -----
+created_time     2019-05-30T13:52:32.879340788Z
+deletion_time    n/a
+destroyed        false
+version          3
+
+=== Data ===
+Key    Value
+---    -----
+bar    hello
+15:52:35 [tobal@zion] (master) ~/opt/vault
+$> vault kv put secret/hello foo=world excited=yes bar=hello
+Key              Value
+---              -----
+created_time     2019-05-30T13:52:43.667412598Z
+deletion_time    n/a
+destroyed        false
+version          4
+15:52:43 [tobal@zion] (master) ~/opt/vault
+$> vault kv get secret/hello
+====== Metadata ======
+Key              Value
+---              -----
+created_time     2019-05-30T13:52:43.667412598Z
+deletion_time    n/a
+destroyed        false
+version          4
+
+===== Data =====
+Key        Value
+---        -----
+bar        hello
+excited    yes
+foo        world
+15:52:45 [tobal@zion] (master) ~/opt/vault
+$> vault kv put secret/hello foo=world excited=yes
+Key              Value
+---              -----
+created_time     2019-05-30T13:52:49.553307387Z
+deletion_time    n/a
+destroyed        false
+version          5
+15:52:49 [tobal@zion] (master) ~/opt/vault
+$> vault kv get -field=excited secret/hello
+yes
+15:54:03 [tobal@zion] (master) ~/opt/vault
+$> vault kv get -format=json secret/hello | jq -r .data.data.excited
+yes
+15:54:09 [tobal@zion] (master) ~/opt/vault
+$> vault kv get -format=json secret/hello
+{
+      "request_id": "72357b22-0d80-b553-cb7d-a3ff3ac0eba1",
+        "lease_id": "",
+          "lease_duration": 0,
+            "renewable": false,
+              "data": {
+                      "data": {
+                                "excited": "yes",
+                                      "foo": "world"
+                                          },
+                                              "metadata": {
+                                                        "created_time": "2019-05-30T13:52:49.553307387Z",
+                                                              "deletion_time": "",
+                                                                    "destroyed": false,
+                                                                          "version": 5
+                                                                              }
+                                                                                },
+                                                                                  "warnings": null
+}
+15:54:13 [tobal@zion] (master) ~/opt/vault
+$> vault kv delete secret/hello
+Success! Data deleted (if it existed) at: secret/hello
+15:54:44 [tobal@zion] (master) ~/opt/vault
+$> vault secrets enable -path=kv kv
+Success! Enabled the kv secrets engine at: kv/
+09:35:47 [tobal@zion] (master) ~/opt/vault
+$> vault secrets list
+Path          Type         Accessor              Description
+----          ----         --------              -----------
+cubbyhole/    cubbyhole    cubbyhole_9335b388    per-token private secret storage
+identity/     identity     identity_19b8adf5     identity store
+kv/           kv           kv_a4617f06           n/a
+secret/       kv           kv_1ab8add4           key/value secret storage
+sys/          system       system_14f027eb       system endpoints used for control, policy and debugging
+09:37:07 [tobal@zion] (master) ~/opt/vault
+$> vault write kv/my-secret value="s3c(eT"
+Success! Data written to: kv/my-secret
+09:40:39 [tobal@zion] (master) ~/opt/vault
+$> vault write kv/hello target=world
+Success! Data written to: kv/hello
+09:40:45 [tobal@zion] (master) ~/opt/vault
+$> vault write kv/airplane type=boeing class=787
+Success! Data written to: kv/airplane
+09:40:51 [tobal@zion] (master) ~/opt/vault
+$> vault list kv
+Keys
+----
+airplane
+hello
+my-secret
+#+END_SRC
