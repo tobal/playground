@@ -1,0 +1,62 @@
+* Daily plan
+** Morning
+*** Morning routine
+    *Takes*: 30m
+** Day
+*** Work
+    *Takes*: 8h
+** Evening
+*** Production
+    *Takes*: 1h
+    Can be either learning or creating
+*** Practice (katas)
+    *Takes*: 1h
+*** Evening routine
+    *Takes*: 30m
+* Hobbies
+** Juggling
+*** Kata
+    TBD
+    *Ideas*:
+    - Staff/Sword
+      - Vertical spinning
+      - Horizontal spinning
+      - Vertical contact
+      - Horizontal contact
+    - Ropedart
+      - Chained transfers
+      - Loose shots
+      - Empty loops
+** Singing
+*** Kata
+    TBD
+    *Ideas*:
+    - Vocal warmup
+    - Sing reggae
+    - Sing jazz
+** Kenjutsu
+*** Kata
+    TBD
+    *Ideas*:
+    - Short bonten
+    - Cuts with both hands
+    - Uchikomi 1
+** Japanese
+*** Kata
+    TBD
+    *Ideas*:
+    - writing
+    - reading
+    - learn words
+** Computer science
+*** Kata
+    TBD
+    *Ideas*: see "katas" card on trello
+** Artificial Intelligence
+*** Learing
+*** Projects
+    - OpenAI contribution
+** Role Playing Games
+*** Projects
+    - Four simulations
+ 
