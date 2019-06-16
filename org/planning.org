@@ -5,14 +5,36 @@
 ** Day
 *** Work
     *Takes*: 8h
+*** Play
+    *Takes*: 1h
 ** Evening
 *** Production
     *Takes*: 1h
     Can be either learning or creating
 *** Practice (katas)
     *Takes*: 1h
+    - Kenjutsu
+    - Contact staff
+    - Japanese
+    - Singing
 *** Evening routine
     *Takes*: 30m
+**** Posture training
+     *Routine*:
+     - Back strength
+       - Torso bend
+       - Bend down with stretched legs
+     - Stretch chest
+       - Stretch with bent arms
+       - Stretch with stretched arms
+       - Twist backward with entwined hands, and bend
+     - Neck strength
+       - Arm waving lying on the floor face down
+**** Higiene
+**** Meditation
+     5 to 20 minutes
+**** Sleep
+     Guided meditation for sleep or lucid dreaming
 * Hobbies
 ** Juggling
 *** Kata
