@@ -25,6 +25,7 @@ Important actors in this film are:
 - Elijah Wood :: He plays Frodo
 - Sean Astin :: He plays Sam, Frodo's friend. I still remember him
      very well from his role as Mikey Walsh in /The Goonies/.
+
 *** Drawers
 Still outside the drawer
 :DRAWERNAME:
@@ -32,3 +33,33 @@ This is inside the drawer.
 It can be multiple lines
 :END:
 After the drawer.
+
+*** Links
+    *format*: [[link] [description]] (without the space)
+    *example*: [[link][description]]
+    To edit the invisible ‘link’ part, use C-c C-l with the cursor on the link.
+    To follow the link, use C-c C-o
+    To go back, use C-c &
+    To save position, use C-c %
+**** Internal links
+     :PROPERTIES:
+     :CUSTOM_ID: internal-links
+     :END:
+     If the link does not look like a URL, it is considered to be internal in the current file.
+     The most important case is a link like ‘[[#my-custom-id]]’ which will link to the entry with the
+     CUSTOM_ID property ‘my-custom-id’.
+     *example*: [[#internal-links][Internal links]]
+     Links such as ‘[[My Target]]’ or ‘[[My Target][Find my target]]’ lead to a text search in the current file for
+     the corresponding target which looks like ‘<<My Target>>’. 
+**** External links
+     Links can be external, we can link to websites, files, etc, you can find all the examples here:
+     [[https://orgmode.org/guide/External-links.html#External-links][External link examples]]
+     [[nihongo.org][This is a link to the japanese language notes]]
+     If the description is a file name or URL that points to an image, HTML export (see [[https://orgmode.org/guide/HTML-export.html#HTML-export][HTML export]])
+     will inline the image as a clickable button. If there is no description at all and the link
+     points to an image, that image will be inlined into the exported HTML file.
+**** Targeted links
+     *examples*:
+     - [[file:~/code/main.c::255]]                 Find line 255
+     - [[file:~/xx.org::My Target]]                Find ‘<<My Target>>’
+     - [[file:~/xx.org::#my-custom-id]]            Find entry with custom id
