@@ -34,6 +34,25 @@ It can be multiple lines
 :END:
 After the drawer.
 
+*** Blocks
+    Blocks are like this:
+    #+BEGIN
+    This is inside the block
+    #+END
+    To fold and unfold blocks, press TAB on the BEGIN line
+
+*** Footnotes
+    Footnotes can be named[fn:NAME] or numbered, and inline or defined seperately[fn:2]. Numbered footnotes can be
+    renumbered and sorted automatically. The footnote action command is C-c C-x f
+    *examples*:
+    [fn:1: first inline footnote]
+    [fn:: anonymus inline footnote]
+[fn:NAME] Named footnote defined seperately, there must be no indentation
+[fn:2] This footnote is defined seperately
+
+** Tables
+
+** Hyperlinks
 *** Links
     *format*: [[link] [description]] (without the space)
     *example*: [[link][description]]
