@@ -1,5 +1,7 @@
 # M-x set-language-environment Japanese
-# C-\ to toggle
+# C-\ in INSERT mode to toggle
+# To switch between kanji, hit SPACE after typing
+# To write with katakana, hit K after typing
 
 * Szófordulatok
 
