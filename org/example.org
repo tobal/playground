@@ -1,4 +1,4 @@
-* Examples from manual
+* Examples from manual and guide
 ** Document structure
 *** Headlines
 **** Third level headline
@@ -51,7 +51,10 @@ After the drawer.
 [fn:2] This footnote is defined seperately
 
 ** Tables
-
+   | Name  | Phone | Age |
+   |-------+-------+-----|
+   | Peter |  1234 |  17 |
+   | Anna  |  4321 |  25 |
 ** Hyperlinks
 *** Links
     *format*: [[link] [description]] (without the space)
