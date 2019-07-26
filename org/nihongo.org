@@ -4,6 +4,91 @@
 # To write with katakana, hit K after typing
 
 * Szavak
+** Szókincs tanulni
+*** 1. hét
+    | név          | namae        | なまえ         |
+    | főváros      | shuto        | しゅと         |
+    | feleség      | tsuma        | つま           |
+    | lányom       | musume       | むすめ         |
+    | fiam         | musuko       | むすこ         |
+    | velük együtt | te isshoni   | て いっしょに  |
+    | lakás        | heya         | けや           |
+    | külváros     | kougai       | こうがい       |
+    | állomás      | eki          | えき           |
+    | család       | kazoku       | かぞく         |
+    | park         | kouen        | こうえん       |
+    | áruház       | depaato      | デパート       |
+    | otthon       | uchi         | うち           |
+    | cég/vállalat | kaisho       | かいしょ       |
+    | vonat        | densha       | でんしゃ       |
+    | metró        | chikatetsu   | ちかてつ       |
+    | hosszú       | nagai        | ながい         |
+    | főnök        | buchou       | ぶちょう       |
+    | munkatársak  | douryoutachi | どうりょうたち |
+    | mindenki     | minna        | みんな         |
+    | munka        | shigoto      | しごと         |
+    | főtt étel    | ryouri       | りょうり       |
+    | játszik      | asobi        | あそび         |
+    | hétvége      | shuumatsu    | しゅうまつ     |
+    | kirándulás   | ensoku       | えんそく       |
+    | vidék        | inaka        | いなか         |
+    | szülők       | ryoushin     | りょうしん      |
+*** 2. hét
+    | hétfő          | getsuyoubi | げつようび |
+    | kedd           | kayoubi    | かようび   |
+    | szerda         | suiyoubi   | すいようび |
+    | csütörtök      | mokuyoubi  | もくようび |
+    | péntek         | kinyoubi   | きんようび |
+    | szombat        | doyoubi    | どようび   |
+    | vasárnap       | nichiyoubi | にちようび |
+    | lakás/szoba    | heya       | へや       |
+    | konyha         | daidokoro  | だいどころ |
+    | fürdőszoba/kád | ofuro      | おふろ     |
+    | most/nappali   | ima        | いま       |
+    | hálószoba      | shinshitsu | しんしつ   |
+    | bejárat        | genkan     | げんかん   |
+    | folyosó        | rouka      | ろうか     |
+    | lépcső         | kaidan     | かいだん   |
+    | iskola         | gakkou     | がっこう   |
+    | egyetem        | daigaku    | だいがく   |
+    | óvoda          | youchien   | ようしえん |
+*** 3. hét
+    | vidámpark  | yuuenchi    | ゆうえんち     |
+    | park       | kouen       | こうえん       |
+    | mozi       | eigakan     | えいがかん     |
+    | reptér     | kuukou      | くうこう       |
+    | posta      | yuubinkyoku | ゆうびんきょく |
+    | kórház     | byouin      | びょういん     |
+    | bank       | ginkou      | ぎんこう       |
+    | bolt       | mise        | みせ           |
+    | étterem    | resutoran   | レストラン     |
+    | áruház     | depaato     | デパート       |
+    | szoba      | ruumu       | ルーム         |
+    | nappali    | ribingu     | リビング       |
+    | apartmann  | apaato      | アパート       |
+    | bérház     | manshon     | マンション     |
+    | barát      | furendo     | フレンド       |
+    | lány       | gaaru       | ガール         |
+    | autó/kerék | kuruma      | くるま         |
+*** 4. hét
+    | személygépjármű | jidousha   | じどうしゃ |
+    | kerékpár        | jitensha   | じてんしゃ |
+    | vonat           | densha     | でんしゃ   |
+    | telefon         | denwa      | でんわ     |
+    | metró           | chikatetsu | ちかてつ   |
+    | villamos        | shiden     | しでん     |
+    | hajó            | fune       | ふね       |
+    | busz            | basu       | バス       |
+    | taxi            | takushi    | タクシ     |
+    | repülő          | hikouki    | ひこうき   |
+    | rakéta          | roketto    | ロケット   |
+    | zöld            | midori     | みどり     |
+    | állomás         | eki        | えき       |
+    | vasúti dolgozó  | ekiin      | えきいん   |
+    | uzsonnás csomag | bentou     | べんとう   |
+    | jegy            | kippu      | きっぷ     |
+    | bélyeg          | kitte      | きって     |
+    | boríték         | fuutou     | ふうとう   |
 ** Szófordulatok
 
 | Bemutatkozás          | Shókai                       | 紹介                         |
