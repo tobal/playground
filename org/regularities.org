@@ -1,0 +1,13 @@
+* Record
+** Household maintenance
+   - Change bedding :: <2019-07-26>
+   - Clean whole flat :: <2019-07-27>
+   - Wash dishes :: <2019-07-17> <2019-07-26>
+   - Wash clothes :: <2019-07-27>
+** Body maintenance
+   - Hairdresser :: <2019-07-16>
+   - Shave :: <2019-07-18> <2019-07-27>
+** Computer maintenance
+   - Update ono-sendai :: <2019-07-26>
+* Plan
+** Workout 
