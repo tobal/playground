@@ -3,7 +3,8 @@
 # To switch between kanji, hit SPACE after typing
 # To write with katakana, hit K after typing
 
-* Szófordulatok
+* Szavak
+** Szófordulatok
 
 | Bemutatkozás          | Shókai                       | 紹介                         |
 |-----------------------+------------------------------+------------------------------|
@@ -24,8 +25,7 @@
 |------------------------+---------------------------+------------------------|
 | Nagyon szépen köszönöm | Dómo arigató gozaimashita | 同も有難うございました |
 
-
-* Személyes névmások
+** Személyes névmások
   
 | Én         | Watashi | わたし |
 | Én (férfi) | Boku    | ぼく   |
@@ -35,7 +35,7 @@
 | Ti         |         |        |
 | Ők         |         |        |
 
-* Számok
+** Számok
 
 | Számok | Kazu        | 数   |
 |--------+-------------+------|
@@ -59,7 +59,7 @@
 |  10000 | man/ichiman | 万   |
 |        |             |      |
 
-* Főnevek
+** Főnevek
  
 | Hobbi           | Shumi      | 趣味         |
 |-----------------+------------+--------------|
@@ -92,9 +92,9 @@
 | kertészkedés    | engei      | えんがい     |
 | mozi, film      | múbí       | ムウビイ     |
 | beszélgetés     | tókingu    | トウキング   |
-| meditáció       | meisó      | めいしょう        |
+| meditáció       | meisó      | めいしょう   |
 
-** Kategorizálatlan
+*** Kategorizálatlan
    
 | Ó! Jaj!       | aa    | ああ     |
 | kék           | aoi   | あおい   |
@@ -111,4 +111,4 @@
 | felett, rajta | ue    | うえ     |
 | igen          | ee    | ええ     |
 | sok           | ooi   | おおい   |
-| meghajlás     | ojigi | おじぎ     |
+| meghajlás     | ojigi | おじぎ   |
