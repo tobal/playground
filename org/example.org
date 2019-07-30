@@ -36,9 +36,9 @@ After the drawer.
 
 *** Blocks
     Blocks are like this:
-    #+BEGIN
+    #+BEGIN_SRC
     This is inside the block
-    #+END
+    #+END_SRC
     To fold and unfold blocks, press TAB on the BEGIN line
 
 *** Footnotes
@@ -85,3 +85,85 @@ After the drawer.
      - [[file:~/code/main.c::255]]                 Find line 255
      - [[file:~/xx.org::My Target]]                Find ‘<<My Target>>’
      - [[file:~/xx.org::#my-custom-id]]            Find entry with custom id
+** ToDo Items
+*** ToDo items
+**** TODO this is an example todo it
+    To rotate todo state, press C-c C-t, or Shift-Left/Right
+    C-c / t to open only the todos in a sparse tree
+    C-c a t to show global todo list
+*** Multi-state workflows
+    To set sequential work in progress states, put the following into your emacs config:
+#+BEGIN_SRC emacs-lisp
+(setq org-todo-keywords
+  '((sequence "TODO" "FEEDBACK" "VERIFY" "|" "DONE" "DELEGATED")))
+#+END_SRC
+    The separator is to separate the todo and done states. You can also have many different workflows, with keyboard
+    shortcuts, like here
+#+BEGIN_SRC emacs-lisp
+(setq org-todo-keywords
+      '((sequence "TODO(t)" "|" "DONE(d)")
+        (sequence "REPORT(r)" "BUG(b)" "KNOWNCAUSE(k)" "|" "FIXED(f)")))
+#+END_SRC
+    To define these for only a single file, use directives like this:
+    #+TODO: TODO(t) | DONE(d)
+    #+TODO: REPORT(r) BUG(b) KNOWNCAUSE(k) | FIXED(f)
+    #+TODO: | CANCELED(c)
+    To reread the local setup (like above), use C-c C-c
+**** KNOWNCAUSE example
+*** Progress logging
+**** Clocking work time
+     - Start the clock :: C-c C-x C-i
+     - Stop the clock :: C-c C-x C-o (will also stop if you mark task DONE)
+     - Update effort estimate for current task :: C-c C-x C-e
+     - Cancel current clock :: C-c C-x C-j
+     - Insert clock report :: C-c C-x C-r
+     - Update clock report :: C-c C-c
+**** Example
+***** DONE this is a todo
+      :LOGBOOK:
+      CLOCK: [2019-07-30 Tue 17:24]--[2019-07-30 Tue 17:25] =>  0:01
+      :END:
+      Working working
+**** Closing items
+     To keep track of when the TODO was finished
+#+BEGIN_SRC emacs-lisp
+(setq org-log-done 'time)
+#+END_SRC
+     or
+     #+STARTUP: logdone
+     To also record a note along the timestamp
+#+BEGIN_SRC emacs-lisp
+(setq org-log-done 'note)
+#+END_SRC
+     or
+     #+STARTUP: lognotedone
+**** Tracking state changes
+     #+TODO: TODO(t) WAIT(w@/!) | DONE(d!) CANCELED(c@)
+     Will define TODO keywords and fast access keys, and also request that a time is recorded
+     when the entry is set to DONE, and that a note is recorded when switching to WAIT or CANCELED.
+     The same syntax works also when setting org-todo-keywords.
+*** Priorities
+**** TODO [#A] example high priority todo
+     - Set priority :: C-c
+     - Inc/dec priority :: Shift-Up/Down
+*** Breaking tasks down into subtasks
+    Put [%] or [/] to track progress
+**** TODO Example epic [50%]
+***** TODO First BLI [2/3]
+****** TODO subtask 1
+****** DONE subtask 2
+****** DONE subtask 3
+***** DONE Second BLI
+*** Checkboxes
+    You can also break down tasks with checkboxes, and make checkboxes out of plain lists with [ ]
+    - Toggle checkbox status :: C-c C-c
+    - Insert new item with checkbox :: M-S-RET
+    - [ ] Example :: todo
+    - [X] 1 :: [3/3]
+      - [X] 1/1 ::
+      - [X] 1/2 ::
+      - [X] 1/3 :: 
+    - [-] 2 :: [33%]
+      - [X] 2/1 ::
+      - [ ] 2/2 ::
+      - [ ] 2/3 :: 
