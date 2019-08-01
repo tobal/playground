@@ -4,8 +4,6 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
-
-[dev-packages]
 pytest = "*"
 pytest-vcr = "*"
 vcrpy = "*"
@@ -13,4 +11,4 @@ requests = "*"
 pyyaml = "*"
 
 [requires]
-python_version = "3.7"
+python_version = "3.6"
