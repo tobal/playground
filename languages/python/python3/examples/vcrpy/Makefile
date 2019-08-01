@@ -4,4 +4,5 @@ check:
 
 .PHONY: record
 record:
-	pytest --backend-service=record
+	rm -rf cassettes
+	pytest
