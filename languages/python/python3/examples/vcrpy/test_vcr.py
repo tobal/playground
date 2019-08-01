@@ -1,9 +1,9 @@
-
 import pytest
-import vcr
 import requests
 
 
+@pytest.mark.vcr()
 def test_vcr_example():
     response = requests.get('https://httpbin.org/')
-    assert response == 'asdf'
+    assert response.ok
+    assert 'A simple HTTP Request &amp; Response Service.' in str(response.content)
