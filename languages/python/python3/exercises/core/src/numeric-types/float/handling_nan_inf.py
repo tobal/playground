@@ -12,10 +12,7 @@
 '''
 
 def clean_float_array(values: list[float], fallback: float = 0.0) -> list[float]:
-    out = []
-    for fl in values:
-        if fl != fl or abs(fl) == float('inf'):
-            out += [fallback]
-        else:
-            out += [fl]
-    return out
+    return [ fallback
+            if (fl != fl or abs(fl) == float('inf'))
+            else fl
+            for fl in values ]
