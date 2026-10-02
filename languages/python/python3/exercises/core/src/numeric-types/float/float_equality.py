@@ -14,6 +14,10 @@
           + is_float_close(1.0, 1.001, rel_tol=1e-4) -> False
 '''
 def is_float_close(a: float, b: float, rel_tol: float = 1e-9, abs_tol: float = 0.0) -> bool:
+    if (a == b):
+        return True
+    if (rel_tol < 0.0 or abs_tol < 0.0):
+        raise ValueError('Invalid negative tolerances')
     difference = abs(a - b)
     scaled_relative_tolerance = rel_tol * max(abs(a), abs(b))
     return difference <= max(scaled_relative_tolerance, abs_tol)
