@@ -23,7 +23,7 @@ def safe_complex_div(z1: complex, z2: complex) -> complex:
     #return complex(ret_real, ret_imag)
     a, b = z1.real, z1.imag
     c, d = z2.real, z2.imag
-    if d == 0:
+    if z2 == 0:
         raise ZeroDivisionError
     if abs(d) <= abs(c):
         r = d / c

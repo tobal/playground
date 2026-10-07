@@ -12,4 +12,4 @@ def test_scaled_division():
 
 def test_raises_zero_div_error():
     with raises(ZeroDivisionError):
-        safe_complex_div(1 + 2j, 3 + 0j)
+        safe_complex_div(1 + 2j, 0 + 0j)
