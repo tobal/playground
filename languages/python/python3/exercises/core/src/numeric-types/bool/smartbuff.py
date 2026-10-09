@@ -3,7 +3,7 @@
 
      * Goal: Implement a class SmartBuffer that encapsulates a dynamic list of items, with configurable
        boolean evaluation rules.
-     * Description:
+     * Description:sum
           + If instantiated with eval_mode="count", bool(buffer) returns True if and only if len(buffer) >
             0.
           + If instantiated with eval_mode="sum", bool(buffer) returns True if and only if sum(elements)
@@ -18,11 +18,12 @@
 
 class SmartBuffer(list):
     def __init__(self, buffer: list, eval_mode: str):
+        if eval_mode not in ("sum", "count"):
+            raise ValueError(f"Unsupported eval_mode: {eval_mode}")
         super().__init__(buffer)
         self.eval_mode = eval_mode
 
     def __bool__(self):
         if self.eval_mode == "sum":
             return sum(self) != 0
-        elif self.eval_mode == "count":
-            return len(self) > 0
+        return len(self) > 0 # 'count' mode
