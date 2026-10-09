@@ -10,6 +10,7 @@
      * Expected Behavior:
           + count_pure_booleans([True, 1, 0, False, "True", True]) -> (2, 1)
 '''
+import typing
 
 def count_pure_booleans(items: list[typing.Any]) -> tuple[int, int]:
     only_bools = [x for x in items if type(x) is bool]
