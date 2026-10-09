@@ -13,5 +13,4 @@
 import typing
 
 def resolve_first_truthy(*args: typing.Any, default: typing.Any = None) -> typing.Any:
-    truthies = (x for x in args if x or False) # using generator instead
-    return next(truthies, default)
+    return next((x for x in args if x), default)
