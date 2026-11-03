@@ -22,3 +22,8 @@ def test_numeric_causes_error():
     with pytest.raises(ValueError):
         run_length_encode("A2B")
 
+
+def test_non_consecutive_runs():
+    assert run_length_encode("ABA") == "A1B1A1"
+    assert run_length_encode("AABBAA") == "A2B2A2"
+

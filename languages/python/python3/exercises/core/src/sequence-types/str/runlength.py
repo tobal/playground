@@ -12,19 +12,10 @@
           + run_length_encode("") -> ""
           + Raises ValueError for "A2B".
 '''
-from collections import Counter, OrderedDict
-
-class OrderedCounter(Counter, OrderedDict):
-    pass
+from itertools import groupby
 
 
 def run_length_encode(s: str) -> str:
-    # there has to be a better way of doing this
     if any(c.isdigit() for c in s):
         raise ValueError
-    d = OrderedCounter(s)
-    s_out = ""
-    for k, v in d.items():
-        s_out += k
-        s_out += str(v)
-    return s_out
+    return "".join(f"{char}{sum(1 for _ in group)}" for char, group in groupby(s))
